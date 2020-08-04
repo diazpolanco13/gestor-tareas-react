@@ -60,6 +60,7 @@ function App() {
       <h1 className="text-center mt-5">GESTOR DE TAREAS</h1>
       <hr />
       <div className="row">
+        {/* Lista de tareas (COLUMNA IZQUIERDA) */}
         <div className="col-8">
           <h4 className="text-center">Lista de tareas</h4>
           <ul className="list-group">
@@ -86,12 +87,12 @@ function App() {
             )}
           </ul>
         </div>
-        {/* Columna del formulario */}
+        {/* Columna del formulario (COLUMNA DERECHA) */}
         <div className="col-4">
           <h4 className="text-center">
             {modoEdicion ? "Editar tarea" : "Agregar Tarea"}
           </h4>
-          {/* formulario */}
+          {/* cuerpo de formulario */}
           <form onSubmit={modoEdicion ? editarTarea : agregarTarea}>
             {error ? <span className="text-danger">{error}</span> : null}
 
@@ -119,4 +120,3 @@ function App() {
 }
 
 export default App;
-
