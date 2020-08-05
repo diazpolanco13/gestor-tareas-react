@@ -41,7 +41,6 @@ function App() {
   const editarTarea = (e) => {
     e.preventDefault();
     if (!tarea.trim()) {
-      console.log("Elemento Vacio");
       setError("Por favor agregue algo...");
       return;
     }
