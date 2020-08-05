@@ -47,7 +47,7 @@ function App() {
     }
 
     const arrayTareasEditadas = tareas.map((item) =>
-      item.id === id ? { id, nombreTarea: tarea } : item
+      item.id === id ? { id: id, nombreTarea: tarea } : item
     );
     setTareas(arrayTareasEditadas);
     setModoEdicion(false);
